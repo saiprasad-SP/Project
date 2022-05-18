@@ -44,13 +44,13 @@ export default function About() {
       <div className={classes.sec_container} >
         <h1 style={{marginLeft:'30%',marginBottom:'25px'}}>Guardian Advantages</h1>
         <ul className={classes.list_cont}>
-        <li><ImForward />We take our fees at the very end of the serices(s) provided, based on your <b>satisfaction</b></li>
-        <li><ImForward/>Our financial plans go through a <b>three step validation process</b> before it reaches the client</li>
-        <li><ImForward/>Absolute transparency-we are <b>100% honest</b> about commissions and incentives</li>
-        <li><ImForward/>Beyond a certain threshold,we invest only in <b>direct funds</b></li>
-        <li><ImForward/>We facilitate tax filings, as well as tax consulting—so that our clients can </li>
-        <li><ImForward/>With regards to Estate and Succession Planning, we’ve tied up with the </li>
-        <li><ImForward/>In summary—we guarantee that we can provide the <b>highest quality of service at the lowest possible price</b>—it’s a win, win situation!</li>
+        <li><ImForward style={{color:'rgb(210,149,55)'}} />We take our fees at the very end of the serices(s) provided, based on your <b>satisfaction</b></li>
+        <li><ImForward style={{color:'rgb(210,149,55)'}}/>Our financial plans go through a <b>three step validation process</b> before it reaches the client</li>
+        <li><ImForward style={{color:'rgb(210,149,55)'}}/>Absolute transparency-we are <b>100% honest</b> about commissions and incentives</li>
+        <li><ImForward style={{color:'rgb(210,149,55)'}}/>Beyond a certain threshold,we invest only in <b>direct funds</b></li>
+        <li><ImForward style={{color:'rgb(210,149,55)'}}/>We facilitate tax filings, as well as tax consulting—so that our clients can </li>
+        <li><ImForward style={{color:'rgb(210,149,55)'}}/>With regards to Estate and Succession Planning, we’ve tied up with the </li>
+        <li><ImForward style={{color:'rgb(210,149,55)'}}/>In summary—we guarantee that we can provide the <b>highest quality of service at the lowest possible price</b>—it’s a win, win situation!</li>
         </ul>
       </div>
     </div>
