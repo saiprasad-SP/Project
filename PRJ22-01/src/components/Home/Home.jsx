@@ -5,10 +5,11 @@ import logo1 from './../Img/guardian-capital-investment-advisors-hyderabad.jpg';
 import logo2 from './../Img/guardian-capital-investment-advisors-india.jpg';
 import logo3 from './../Img/gcia-wealth-management-services.jpg';
 import logo4 from './../Img/secure-your-financial-future.jpg';
+import logo5 from './../Img/guardian-capital-investments-advisors.png'
 import classes from './Home.module.css';
 
 
-const images = [logo1, logo2, logo3, logo4];
+const images = [logo1, logo2, logo3, logo4,logo5];
 
 const zoomOutProperties = {
     duration: 5000,
