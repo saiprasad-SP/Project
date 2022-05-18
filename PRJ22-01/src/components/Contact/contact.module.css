@@ -1,0 +1,26 @@
+.text_cont{
+    text-align: center;
+    margin-top: 2%;
+}
+.parent{
+    display: flex;
+    text-align: center;
+}
+.child{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+ul{
+    list-style-type: none;
+}
+input{
+    width: 100%;
+}
+.form_cont{
+    margin-left: 20%;
+    margin-top: 5%;
+}
+.map_sec{
+    color: #8a8888;
+    text-align: center;
+}
