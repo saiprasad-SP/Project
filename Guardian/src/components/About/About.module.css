@@ -1,0 +1,57 @@
+.parent_container{
+    background: #f5f2f2;
+}
+.flex_container {
+    display: flex;
+    position: relative;
+}
+
+.flex_child {
+    flex: 1;
+    position: relative;
+}  
+.childbg{
+    background: rgb(43, 41, 41);
+    color: white;
+    height: 100%;
+   position: absolute;
+    }
+
+.flex_child first_child {
+    margin-right: 20px;
+} 
+.childbg h2{
+    font-size: 32px;
+    font-family: Varela,sans-serif;
+    padding: 35px 0px 0px;
+}
+.sec_container{
+    justify-content: center;
+    position: relative;
+}
+.list_cont {
+    list-style: none;
+}
+/* gradient line css */
+.line_spark{
+    background: linear-gradient(to left,#71b347,#ffff) no-repeat;
+    width: 75px;
+    height: 2px;
+    margin-top: 25px;
+    margin-left: 45%;
+    border-radius: 5px;
+}
+/* .container{
+    background: red;
+} */
+.child_container{
+    background: white;
+    margin-bottom: 20px;
+}
+footer{
+    background: rgb(43, 41, 41);
+    padding: 45px;
+    color: white;
+    text-align: center;
+
+}
