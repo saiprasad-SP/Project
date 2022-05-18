@@ -1,3 +1,9 @@
 body{
     background-image: linear-gradient(to right,white,yellow);
 }
+p{
+    color: red;
+}
+h1{
+    color: blue;
+}
