@@ -9,44 +9,42 @@ import Blog from '../Blog/Blog';
 import Contacts from '../Contact/Contact';
 import Careers from '../Careers/Careers';
 import Education from '../Education/Education';
+import './NavBar.module.css'
 
 export default function NavBar() {
   return (
     <Router>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
-                <Link className="navbar-brand" to="/"> <img src={logo} alt="" /></Link>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
+                <Link className="navbar-brand" to="/"> <img src={logo} alt="Not Found" style={{marginLeft:'10%'}} /></Link>
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav">
-                    <li className="nav-item">
+                    <li className="nav-item" style={{paddingLeft:'50px'}}>
                         <Link className="nav-link active" aria-current="page" to="/">HOME</Link>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" style={{paddingLeft:'50px'}}>
                         <Link className="nav-link" to="/about">ABOUT US</Link>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" style={{paddingLeft:'50px'}}>
                         <Link className="nav-link" to="/services">SERVICES</Link>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" style={{paddingLeft:'50px'}}>
                         <Link className="nav-link" to="/blog">BLOG</Link>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" style={{paddingLeft:'50px'}}>
                         <Link className="nav-link" to="/contacts">CONTACT US</Link>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" style={{paddingLeft:'50px'}}>
                         <Link className="nav-link" to="/careers">CAREERS</Link>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" style={{paddingLeft:'50px'}}>
                         <Link className="nav-link" to="/education">EDUCATION</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/add"><i class="bi bi-three-dots-vertical"></i></Link>
                     </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/add"><button>GET IN TOUCH <GrSend/></button></Link>
+                    <li className="nav-item" style={{marginLeft:'400px'}}>
+                        <Link className="nav-link" to="/add"><button>GET IN TOUCH <GrSend style={{color:'white'}}/></button></Link>
                     </li>
                     </ul>
                 </div>
