@@ -14,7 +14,7 @@ export default function Careers() {
             We are always on the lookout for like-minded, self-motivated individuals who are keen on joining us.
           </li>
           <li>
-            Send us your profiles at <strong><a href="#">hr@gcia.in</a></strong>
+            Send us your profiles at <strong><a href="/">hr@gcia.in</a></strong>
           </li>
         </ul>
       </div>
