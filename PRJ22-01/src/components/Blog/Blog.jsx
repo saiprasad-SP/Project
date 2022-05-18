@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function Blog() {
   return (
-    <div>This is a blog vlog log page</div>
+    <div>
+      <h1>All Posts</h1>
+    </div>
   )
 }
