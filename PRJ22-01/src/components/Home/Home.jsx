@@ -12,11 +12,11 @@ import classes from './Home.module.css';
 const images = [logo1, logo2, logo3, logo4,logo5];
 
 const zoomOutProperties = {
-    duration: 5000,
+    duration: 2000,
     transitionDuration: 500,
     infinite: true,
     indicators: true,
-    //scale: 0.4,
+    // scale: 0.6,
     arrows: true
   };
   
