@@ -4,7 +4,7 @@ import Wbsite2 from '../Img/Website-content-education-1.jpg'
 import Ak from '../Img/ak.jpg'
 import Chart1 from '../Img/Chart-1.jpg'
 import Chart2 from '../Img/Chart-2.jpg'
-import className from './Education.css'
+import './Education.css'
 
 export default function Education() {
   return (
