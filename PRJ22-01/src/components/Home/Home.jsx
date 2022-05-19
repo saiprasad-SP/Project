@@ -38,6 +38,7 @@ export default function Home() {
         <h1>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, perspiciatis rerum! Dolorum sint, rem voluptatum ex blanditiis qui maiores ipsum fugiat expedita placeat distinctio tempora dolore tempore, voluptas, non laudantium.
         </h1>
+        
     </div>
   )
 }
