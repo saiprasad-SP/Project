@@ -12,11 +12,11 @@ import classes from './Home.module.css';
 const images = [logo1, logo2, logo3, logo4,logo5];
 
 const zoomOutProperties = {
-    duration: 2000,
+    duration: 5000,
     transitionDuration: 500,
     infinite: true,
     indicators: true,
-    // scale: 0.6,
+    //scale: 0.4,
     arrows: true
   };
   
@@ -38,6 +38,7 @@ export default function Home() {
         <h1>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, perspiciatis rerum! Dolorum sint, rem voluptatum ex blanditiis qui maiores ipsum fugiat expedita placeat distinctio tempora dolore tempore, voluptas, non laudantium.
         </h1>
+        
     </div>
   )
 }
