@@ -1,3 +1,6 @@
-.row{
-    background: red;
+.container {
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    
 }
