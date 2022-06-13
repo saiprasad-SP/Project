@@ -1,7 +1,7 @@
 import React from 'react';
 import {Zoom} from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'  
-import Picture from '../Img/Picture.jpg'
+import Picture from '../Img/picture.jpg'
 import logo1 from './../Img/guardian-capital-investment-advisors-hyderabad.jpg';
 import logo2 from './../Img/guardian-capital-investment-advisors-india.jpg';
 import logo3 from './../Img/gcia-wealth-management-services.jpg';
