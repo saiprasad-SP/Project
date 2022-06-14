@@ -40,9 +40,7 @@ export default function NavBar() {
                     <li className="nav-item" style={{paddingLeft:'50px'}}>
                         <Link className="nav-link" to="/education">EDUCATION</Link>
                     </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/add"><i class="bi bi-three-dots-vertical"></i></Link>
-                    </li>
+                    {/* three dots has been removed it has to be added when the page is responsive */}
                     <li className="nav-item" style={{marginLeft:'400px'}}>
                         <Link className="nav-link" to="/add"><button>GET IN TOUCH <GrSend style={{color:'white'}}/></button></Link>
                     </li>

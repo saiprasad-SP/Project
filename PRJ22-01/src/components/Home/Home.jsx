@@ -42,14 +42,11 @@ const zoomOutProperties = {
   };
 export default function Home() {
   return (
-    <div className={classes.slider}>
-        <Slideshow/>
+     <div className={classes.slider}>
+       <Slideshow/>
         <section className="section bg-c-dark"></section>
-        <div style={{background:'rgb(185, 141, 59)' }}></div>
-             <div className="row"></div>
-
-        
-
+         <div style={{background:'rgb(185, 141, 59)' }}></div>
+             <div className="row"></div>    
         <div className={classes.flex_container}>
         <div className={classes.flex_child}>
           <div className={classes.childbg}>
@@ -73,20 +70,12 @@ export default function Home() {
           <img src={Picture} alt="Not Found" />
         </div>
     </div>
-        
-
-
-
-
-        
          <div style={{background:'rgb(185, 141, 59)' }}>
         <div className="col-md-15 text-center">
         <h5 className="heading text-center">Call Guardian today and secure your financial future</h5>
         <div className="btn btn-outline-danger shadow">GET IN TOUCH <i class="bi bi-send"></i></div>
         </div>
         </div>        
-        
-        
        <div className="child_container">
      <div className="line_spark"></div>
      <div>
@@ -101,8 +90,6 @@ export default function Home() {
               requirements.
               </p>
             </div>
-
-
             <div className="col" style={{textAlign:'center'}}>
             <img src={H2} alt="" style={{width:'15%'}} />
             <h5>Financial Planning Services</h5>
@@ -223,7 +210,9 @@ export default function Home() {
       <div></div>
     </div>
     </div>
-     
+    <div className={classes.gbtn}>
+         <h5>GET IN TOUCH</h5>
+       </div>
      </div>
   )
 }

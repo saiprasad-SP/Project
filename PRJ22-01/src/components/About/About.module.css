@@ -35,10 +35,11 @@
 /* gradient line css */
 .line_spark{
     background: linear-gradient(to left,#71b347,#ffff) no-repeat;
-    width: 75px;
+    width: 50px;
     height: 2px;
     margin-top: 25px;
-    margin-left: 45%;
+    margin-left: 48%;
+    margin-bottom: 45px;
     border-radius: 5px;
 }
 /* .container{
@@ -46,6 +47,7 @@
 } */
 .child_container{
     background: white;
+    padding-bottom: 150px;
     margin-bottom: 20px;
 }
 footer{
@@ -54,4 +56,11 @@ footer{
     color: white;
     text-align: center;
 
+}
+.cnt{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+#col{
+    cursor: pointer;
 }

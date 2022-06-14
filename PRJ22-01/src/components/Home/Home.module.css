@@ -20,3 +20,10 @@
     flex:1;
     position: relative;
 }
+.gbtn{
+  background: rgb(210,149,55);
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: white;
+}
