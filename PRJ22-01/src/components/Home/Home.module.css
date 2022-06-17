@@ -4,21 +4,17 @@
 }
 .bg-c-dark{
     color: rgb(185, 141, 59);
-  
-  }
-  .section{
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-.flex_container {
-    display: flex;
-    position: relative;
 }
-
-.flex_child {
-    flex:1;
-    position: relative;
+.section{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.grid_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid_child{
+  margin-right: 151px;
 }
 .gbtn{
   background: rgb(210,149,55);
@@ -27,3 +23,95 @@
   margin-bottom: 5px;
   color: white;
 }
+.lgn_btn{
+  color: rgb(243, 239, 239);
+  width: 250px;
+  padding: 15px;
+  border: 1px solid rgb(238, 227, 227);
+  border-radius:3px;
+}
+.lgn{
+  background: rgb(210,149,55);
+  padding: 65px;
+}
+.lgn_btn:hover{
+color: rgb(210,149,55);
+background: white;
+}
+.login_btn{
+  background: none;
+}
+.childbg{
+  margin-top: 25%;
+  /* margin-right: 15%; */
+  width: 100%;
+}
+.container{
+  position: relative;
+  text-align: center;
+}
+.img_left{
+  position: absolute;
+  top:15%;
+  color: white;
+  padding: 15px;
+}
+.float_container{
+  border: 1px solid green;
+  background: rgb(210,149,55);
+  padding: 25px;
+}
+.float_child{
+  width: 50%;
+  float: left;
+  margin-left: 50px;
+}
+.cnt_container{
+  display: flex;
+}
+.cnt_child{
+  margin-left: 50px;
+  color: white;
+  padding: 50px;
+}
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 500px;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+.slide {
+  display: inline-block;
+
+  height: 400px;
+  width: 100%;
+  border-radius: 40px;
+}
+
+/* Buttons */
+
+.slideshowDots {
+  text-align: center;
+}
+
+.slideshowDot {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  margin: 15px 7px 0px;
+
+  background-color: #c4c4c4;
+}
+
+.slideshowDot.active {
+  background-color: #6a0dad;
+}
+/* styling for client content */

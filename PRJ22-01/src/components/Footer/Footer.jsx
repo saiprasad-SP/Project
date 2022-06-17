@@ -1,6 +1,8 @@
 import React from 'react';
 import {BsLinkedin} from 'react-icons/bs'
-import {RiCopyrightFill} from 'react-icons/ri'
+import {RiCopyrightFill} from 'react-icons/ri';
+import {ExternalLink} from 'react-external-link';
+import {} from 'react-router-dom';  
 
 export default function Footer() {
   return (
@@ -25,7 +27,9 @@ export default function Footer() {
               <h5><b>M:</b>9560030404 <b>E:</b>aseem.gupta@gcia.in</h5>
             </div>
             <div class="col">
-              <BsLinkedin style={{height:'100px'}}/>
+            <ExternalLink href='https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fguardian-capital-investment-advisors%2Fabout%2F'>
+              <BsLinkedin style={{height:'100px',color:'white'}}/>
+            </ExternalLink>
             </div>
           </div>
         </div>
