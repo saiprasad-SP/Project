@@ -74,4 +74,23 @@ background: white;
   color: white;
   padding: 50px;
 }
+/* table styling */
+.tab1{
+  width: 25%;
+  border-top: 1px groove;
+  margin: 5px;
+}
+.tab1 th{
+border-bottom: 0px;
+}
+table,th,td{
+  border: 1px groove;
+  padding: 25px;
+  border-top: 0px;
+  border-left: 0px;
+  margin-top: 35px;
+  color: #707B83 ;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
 /* styling for client content */

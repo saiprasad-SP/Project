@@ -57,29 +57,29 @@ export default function About() {
     {/* animation section  */}
     <div className={classes.child_container}>
      <div className={classes.line_spark}></div>
-     <div>
-       <h1 style={{marginLeft:'40%',padding:'50px'}}>Leadership Info</h1>
-       <div className="container">
-          <div className="row">
-            <div className="col" id='col' style={{textAlign:'center'}}>
-              <img src={Auht1} alt="" style={{width:'85%'}}/>
-              <h5>kartik Damodar</h5>
+      <div>
+        <h1 style={{marginLeft:'40%',padding:'50px'}}>Leadership Info</h1>
+        <div className="container">
+            <div className="row">
+              <div className="col"  style={{textAlign:'center'}}>
+                <img src={Auht1} alt="" style={{width:'85%'}}/>
+                <h5>kartik Damodar</h5>
+              </div>
+              <div className="col" style={{textAlign:'center'}}>
+              <img src={Auht2} alt="" style={{width:'85%'}} />
+              <h5>Aseem Sen Gupta</h5>
+              </div>
+              <div className="col" style={{textAlign:'center'}}>
+              <img src={Auht3} alt="" style={{width:'85%'}} />
+              <h5>Kripa Bhattarai</h5>
+              </div>
+              <div className="col" style={{textAlign:'center'}}>
+              <img src={Auht4} alt="" style={{width:'85%'}} />
+              <h5>Amit Sharma</h5>
+              </div>
             </div>
-            <div className="col" style={{textAlign:'center'}}>
-            <img src={Auht2} alt="" style={{width:'85%'}} />
-            <h5>Aseem Sen Gupta</h5>
-            </div>
-            <div className="col" style={{textAlign:'center'}}>
-            <img src={Auht3} alt="" style={{width:'85%'}} />
-            <h5>Kripa Bhattarai</h5>
-            </div>
-            <div className="col" style={{textAlign:'center'}}>
-            <img src={Auht4} alt="" style={{width:'85%'}} />
-            <h5>Amit Sharma</h5>
-            </div>
-          </div>
-       </div>
-     </div>
+        </div>
+      </div>
     </div>
     {/*Core values of the company */}
     <div>

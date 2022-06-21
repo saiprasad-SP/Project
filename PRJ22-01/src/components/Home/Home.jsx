@@ -1,4 +1,5 @@
 import React from 'react';
+// import Popup from 'reactjs-popup';
 import {Zoom} from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'  
 import Picture from '../Img/picture.jpg'
@@ -164,9 +165,47 @@ export default function Home() {
         </div>
       </div>
       <div>
+        <table className={classes.tab1}>
+          <tr>
+            <th>At the Begining of the month</th>
+            <th>Received during the month</th>
+            <th>Resolved during the month</th>
+            <th>Pending at the end of the month</th>
+            <th>Reason for pendency</th>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>-</td>
+          </tr>
+        </table>
+      </div>
+      <div>
         <h6 style={{color:'rgb(135,116,139)',float:'left',position:'absolute'}}>*Displaying SEBI registered complaints as per latest SEBI guideline</h6>
       </div>
       <div><h6 style={{color:'rgb(135,116,139)',float:'left',marginTop:'35px',marginLeft:'5px'}}>Complaints Data Detail</h6></div>
+      <div><h6 style={{marginTop:'75px',marginRight:'80px',color:'rgb(135,116,139)'}}>Disclosure with respect to compliance with Annual compliance audit requirement under Regulation 19(3) of SECURITIES AND EXCHANGE BOARD OF INDIA (INVESTMENT ADVISERS) REGULATIONS, 2013 for last and current financial year are as under :</h6></div>
+      <div><table>
+        <tr>
+          <th>Sr.No.</th>
+          <th>Financial Year</th>
+          <th>Compliance Audit Status</th>
+          <th>Remarks, if any</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>FY 2020-21</td>
+            <td>Conducted/Not Conducted</td>
+            <td>Complied</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>FY 2021-222</td>
+            <td>Conducted/Not Conducted</td>
+            <td>In Process,as due date is <br /> 30 September 2022</td>
+          </tr></table></div>
       <div className={classes.container}>
         <img src={H9} alt="not found" style={{height:'25%',width:'100%'}}/>
         <div className={classes.img_left} style={{width:'50%'}}>
