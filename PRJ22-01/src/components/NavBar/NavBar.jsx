@@ -9,6 +9,9 @@ import Blog from '../Blog/Blog';
 import Contacts from '../Contact/Contact';
 import Careers from '../Careers/Careers';
 import Education from '../Education/Education';
+import Post1 from '../Blog/Post1.jsx'
+import Post2 from '../Blog/Post2.jsx'
+import Post3 from '../Blog/Post3.jsx'
 import './NavBar.module.css'
 
 export default function NavBar() {
@@ -56,6 +59,9 @@ export default function NavBar() {
             <Route path='/contacts' element={<Contacts/>}/>
             <Route path='/careers' element={<Careers/>}/>
             <Route path='/education' element={<Education/>}/>
+            <Route path='/why-investment-decision-based-on-large-cap-and-small-cap-is-flawed/' element={<Post1/>}/>
+            <Route path='/guardian-capital-what-to-expect-from-your-investments-going-forward/' element={<Post2/>}/>
+            <Route path='/5-questions-to-ask-your-wealth-manager/' element={<Post3/>}/>
         </Routes>
   </Router>
   );

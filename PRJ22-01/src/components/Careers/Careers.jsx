@@ -60,7 +60,7 @@ export default function Careers() {
               <input type="file" name="" id="" />
             </li>
             <li>
-              <button style={{padding:'15px',width:'200px',border:'none',color:'white',background:'rgb(210,149,55)',borderRadius:'5px'}}>SUBMIT REQUEST</button>
+              <button style={{padding:'15px',width:'200px',border:'none',color:'white',background:'rgb(210,149,55)',borderRadius:'5px'}}>SEND REQUEST</button>
             </li>
           </ul>
         </form>
