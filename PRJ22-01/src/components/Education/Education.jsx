@@ -27,36 +27,30 @@ export default function Education() {
        <div className="container" >
           <div className="row">
             <div className="col" style={{textAlign:'center'}}>
-              <h5>Retirement/Goals</h5>
-              <p>How much do I need to save?<br/>
-              When do I need to save?<br/>
-              What will my living standard be?<br/>
-              How can I change my situation
-              </p>
+              <h5 style={{padding:'10px',background:'#A8D08C',border:'',marginBottom:'5%'}}>Retirement/Goals</h5>
+              <li>How much do I need to save?</li>
+              <li>When do I need to save?</li>
+              <li>What will my living standard be?</li>
+              <li>How can I change my situation</li>
             </div>
 
 
             <div className="col" style={{textAlign:'center'}}>
-            <h5>Investments</h5>
-            <p>How much do I need to invest?<br/>
-            When should I invest?<br/>
-            where shoukd I invest?<br/>
-            What should I expect out of my<br/>
-            investments?
-            </p>
+            <h5 style={{padding:'10px',background:'#A8D08C',border:'',marginBottom:'5%'}}>Investments</h5>
+            <li>How much do I need to invest?</li>
+            <li>When should I invest?</li>
+            <li>where shoukd I invest?</li>
+            <li>What should I expect out of my investments?</li>
             </div>
 
 
 
             <div className="col" style={{textAlign:'center'}}>
-            <h5>Insurance/Risk</h5>
-            <p>Why do I need to invest?<br/>
-            What type do I need?<br/>
-            How much do I need?<br/>
-            When should I get insurance?
-
-
-            </p>
+            <h5 style={{padding:'10px',background:'#A8D08C',border:'',marginBottom:'5%'}}>Insurance/Risk</h5>
+            <li>Why do I need to invest?</li>
+            <li>What type do I need?</li>
+            <li>How much do I need?</li>
+            <li>When should I get insurance?</li>
             </div>
         
           </div>
@@ -64,9 +58,9 @@ export default function Education() {
      </div>
     </div>
 </div>
-
-<p className="style">The 35 years of income generated has to provide for the 30 years of retiremenrt (keeping inflation in mind) !</p>
-
+<div className='container'>
+<p className="style" style={{padding:'10px',color:'white',background:'rgb(210,149,55)',border:'',borderRadius:'0px',marginBottom:'5%'}}>The 35 years of income generated has to provide for the 30 years of retiremenrt (keeping inflation in mind) !</p>
+</div>
      <h2 className="Education2 text-center">Education: Investment Options</h2>
      <img src={Ak} class="d-block w-70 center" alt="..."/>
 
