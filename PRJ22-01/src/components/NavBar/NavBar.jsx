@@ -1,10 +1,17 @@
 import React from 'react';
 import { GrSend } from 'react-icons/gr';
 import logo from './../Img/main_logo-1.png';
-import {BrowserRouter as Router,Routes,Route,Link,NavLink} from 'react-router-dom';
+import {BrowserRouter as Router,Routes,Route,NavLink} from 'react-router-dom';
 import Home from '../Home/Home';
 import About from '../About/About';
 import Services from '../Services/Services';
+import FamilyOfficeServices from '../Services/FamilyOfficeServices/FamilyOfficeServices';
+import FinancialPlanningServices from '../Services/FinancialPlanningServices/FinancialPlanningServices';
+import WealthManagementAdvisory from '../Services/WealthManagementAdvisory/WealthManagementAdvisory';
+import EstateSuccessionAdvisory from '../Services/EstateSuccessionAdvisory/EstateSuccessionAdvisory';
+import RealestateAdvisory from '../Services/RealestateAdvisory/RealestateAdvisory';
+import InsuranceAdvisory from '../Services/InsuranceAdvisory/InsuranceAdvisory';
+import AccountingTaxationAdvisory from '../Services/AccountingTaxationAdvisory/AccountingTaxationAdvisory';
 import Blog from '../Blog/Blog';
 import Contacts from '../Contact/Contact';
 import Careers from '../Careers/Careers';
@@ -12,6 +19,11 @@ import Education from '../Education/Education';
 import Post1 from '../Blog/Post1.jsx'
 import Post2 from '../Blog/Post2.jsx'
 import Post3 from '../Blog/Post3.jsx'
+import KD from '../About/Leaders/KD';
+import AS from '../About/Leaders/AS';
+import ASG from '../About/Leaders/ASG';
+import KB from '../About/Leaders/KB';
+
 import './NavBar.module.css'
 
 export default function NavBar() {
@@ -55,6 +67,13 @@ export default function NavBar() {
             <Route path='/' element={<Home/>}/>
             <Route path='/about' element={<About/>}/>
             <Route path='/services' element={<Services/>}/>
+            <Route path='/family-office-services' element={<FamilyOfficeServices/>}/>
+            <Route path='/financial-planning-services' element={<FinancialPlanningServices/>}/>
+            <Route path='/wealth-management' element={<WealthManagementAdvisory/>}/>
+            <Route path='/legal-advisory' element={<EstateSuccessionAdvisory/>}/>
+            <Route path='/real-estate-advisory' element={<RealestateAdvisory/>}/>
+            <Route path='/insurance-advisory' element={<InsuranceAdvisory/>}/>
+            <Route path='/accounting-and-taxation-advisory' element={<AccountingTaxationAdvisory/>}/>
             <Route path='/blog' element={<Blog/>}/>
             <Route path='/contacts' element={<Contacts/>}/>
             <Route path='/careers' element={<Careers/>}/>
@@ -62,6 +81,11 @@ export default function NavBar() {
             <Route path='/why-investment-decision-based-on-large-cap-and-small-cap-is-flawed/' element={<Post1/>}/>
             <Route path='/guardian-capital-what-to-expect-from-your-investments-going-forward/' element={<Post2/>}/>
             <Route path='/5-questions-to-ask-your-wealth-manager/' element={<Post3/>}/>
+            <Route path='/KD' element={<KD/>}/>
+            <Route path='/ASG' element={<ASG/>}/>
+            <Route path='/KB' element={<KB/>}/>
+            <Route path='/AS' element={<AS/>}/>
+
         </Routes>
   </Router>
   );

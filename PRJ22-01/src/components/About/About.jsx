@@ -4,9 +4,11 @@ import logo from './../Img/about-bg-2.png';
 import Auht1 from './../Img/kartik1-770x744.jpg';
 import Auht2 from './../Img/Aseem-1-770x744.jpg';
 import Auht3 from './../Img/Kripa1-770x744.jpg';
-import BGI from './../Img/FEFeb20-CaseStudySB-Feature.jpg';
+import BGI from './../Img/OP4.jpg';
 import Auht4 from './../Img/Amit-1.jpg';
 import {ImForward} from 'react-icons/im';
+import {Link} from 'react-router-dom';
+import {ExternalLink} from 'react-external-link';
 export default function About() {
   return (
     <div className={classes.parent_container}>
@@ -62,25 +64,42 @@ export default function About() {
         <div className="container">
             <div className="row">
               <div className="col"  style={{textAlign:'center'}}>
-                <img src={Auht1} alt="" style={{width:'85%'}}/>
-                <h5>kartik Damodar</h5>
+                <ExternalLink href='https://www.linkedin.com/in/kartikinformation/' target='_self'>
+                  <img src={Auht1} alt="user not found" style={{width:'85%'}}/>
+                </ExternalLink>
+                <Link to='/KD'>
+                  <h5>kartik Damodar</h5>
+                </Link>
+              </div>
+              <div className="col" style={{textAlign:'center'}} target='_self'>
+                <ExternalLink href='https://www.linkedin.com/in/aseem-sen-gupta-3a3ab318/'>
+                  <img src={Auht2} alt="user not found" style={{width:'85%'}} />
+                </ExternalLink>
+                <Link to='/ASG'>
+                  <h5>Aseem Sen Gupta</h5>
+                </Link>
+              </div>
+              <div className="col" style={{textAlign:'center'}} target='_self'>
+                <ExternalLink href='https://www.linkedin.com/in/kripa-b-19132b119/'>
+                  <img src={Auht3} alt="user not found" style={{width:'85%'}} />
+                </ExternalLink>
+                <Link to='/KB'>
+                  <h5>Kripa Bhattarai</h5>
+                </Link>
               </div>
               <div className="col" style={{textAlign:'center'}}>
-              <img src={Auht2} alt="" style={{width:'85%'}} />
-              <h5>Aseem Sen Gupta</h5>
-              </div>
-              <div className="col" style={{textAlign:'center'}}>
-              <img src={Auht3} alt="" style={{width:'85%'}} />
-              <h5>Kripa Bhattarai</h5>
-              </div>
-              <div className="col" style={{textAlign:'center'}}>
-              <img src={Auht4} alt="" style={{width:'85%'}} />
-              <h5>Amit Sharma</h5>
+                <ExternalLink href='https://www.linkedin.com/in/amit-sharma-09824ab/' target='_self'>
+                  <img src={Auht4} alt="user not found" style={{width:'85%'}} />
+                </ExternalLink>
+                <Link to='/AS'>
+                  <h5>Amit Sharma</h5>
+                </Link>
               </div>
             </div>
         </div>
       </div>
     </div>
+
     {/*Core values of the company */}
     <div>
       <div className={classes.line_spark}></div>

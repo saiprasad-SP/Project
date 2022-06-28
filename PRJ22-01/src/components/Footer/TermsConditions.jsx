@@ -1,5 +1,5 @@
 import React from 'react';
-import './TermsConditions.module.css'
+// import './TermsConditions.module.css'
 
 export default function TermsConditions() {
   return (<>

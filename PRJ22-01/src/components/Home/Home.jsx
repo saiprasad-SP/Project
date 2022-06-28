@@ -1,7 +1,11 @@
 import React from 'react';
+import Carousel from 'react-elastic-carousel';
 // import Popup from 'reactjs-popup';
-import {Zoom} from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css'  
+// import {Zoom} from 'react-slideshow-image';
+import Slider from 'react-animated-slider';
+import 'react-animated-slider/build/horizontal.css';
+
+// import 'react-slideshow-image/dist/styles.css'
 import Picture from '../Img/picture.jpg'
 import logo1 from './../Img/guardian-capital-investment-advisors-hyderabad.jpg';
 import logo2 from './../Img/guardian-capital-investment-advisors-india.jpg';
@@ -16,35 +20,100 @@ import H5 from '../Img/H5.jpg'
 import H6 from '../Img/H6.jpg'
 import H7 from '../Img/H7.jpg'
 import H9 from '.././Img/contactform-2.jpg'
-// import userLogo from '.././Img/user_female-90x90.png';
+import userLogo from '.././Img/user_female-90x90.png';
 import 'react-awesome-slider/dist/styles.css';
 import bg from '.././Img/bg-2.png'
 import classes from './Home.module.css';
-const images = [logo1, logo2, logo3, logo4,logo5];
-const zoomOutProperties = {
-  duration: 5000,
-  transitionDuration: 500,
-  infinite: true,
-  indicators: true,
-  //scale: 0.4,
-  arrows: true
-};
+import './slider-animation.css';
+// const images = [logo1, logo2, logo3, logo4,logo5]; 
 
-const Slideshow = () => {
-  return (
-    <div className="slide-container">
-      <Zoom {...zoomOutProperties}>
-        {images.map((each, index) => (
-          <img key={index} style={{ width: "100%" }} src={each} alt="Not Found" />
-        ))}
-      </Zoom>
-    </div>
-  );
-};
+const content = [
+  {
+    title: "WE TAKE CARE OF ANYTHING AND EVERYTHING",
+    description:
+      "RELATED TO YOUR FINANCES",
+    image: "https://www.gcia.in/wp-content/uploads/2018/11/guardian-capital-investment-advisors-hyderabad.jpg",
+    user: "Luan Gjokaj",
+    userProfile: "https://i.imgur.com/JSW6mEk.png"
+  },
+  {
+    title: "SO THAT YOU CAN",
+    description:
+      "BREEZE THROUGH LIFE",
+    image: "https://www.gcia.in/wp-content/uploads/2018/11/secure-your-financial-future.jpg",
+    user: "Erich Behrens",
+    userProfile: "https://i.imgur.com/0Clfnu7.png"
+  },
+  {
+    title: "WHILE HITTING",
+    description:
+      "ALL YOUR GOALS",
+    image: "https://www.gcia.in/wp-content/uploads/2018/11/guardian-capital-investment-advisors-india.jpg",
+    user: "Bruno Vizovskyy",
+    userProfile: "https://i.imgur.com/4KeKvtH.png"
+  },
+  {
+    title: "AND PROTECTING",
+    description:
+      "YOUR FAMILY",
+    image: "https://www.gcia.in/wp-content/uploads/2018/11/gcia-wealth-management-services.jpg",
+    user: "Bruno Vizovskyy",
+    userProfile: "https://i.imgur.com/4KeKvtH.png"
+  },
+  {
+    title: "TRUST GUARDIAN GROUP",
+    description:
+      "YOUR GUARDIAN ANGELS FOR LIFE",
+    button: "WATCH VIDEO",
+    image: "https://www.gcia.in/wp-content/uploads/2018/12/guardian-capital-investments-advisors.png",
+    user: "Bruno Vizovskyy",
+    userProfile: "https://i.imgur.com/4KeKvtH.png"
+  }
+];
+// const zoomOutProperties = {
+//   duration: 5000,
+//   transitionDuration: 500,
+//   infinite: true,
+//   indicators: true,
+//   //scale: 0.4,
+//   arrows: true
+// };
+// const Slideshow = () => {
+//   return (
+//     <div className="slide-container">
+//       <Zoom {...zoomOutProperties}>
+//         {images.map((each, index) => (
+//           <img key={index} style={{ width: "100%" }} src={each} alt="Not Found" />
+//         ))}
+//       </Zoom>
+//     </div>
+//   );
+// };
 export default function Home() {
   return (
     <div className={classes.slider}>
-        <Slideshow/>
+        {/* <Slideshow/> */}
+        <Slider className="slider-wrapper" autoplay duration={2000}>
+            {content.map((item, index) => (
+            <div
+              key={index}
+              className="slider-content"
+              style={{ background: `url('${item.image}') no-repeat center center` }}
+            >
+              <div className="inner">
+                <p>{item.title}</p>
+                <h1>{item.description}</h1>
+                <button>{item.button}</button>
+              </div>
+              <section>
+                {/* <img src={item.userProfile} alt={item.user} /> */}
+                {/* <span>
+                  Posted by <strong>{item.user}</strong>
+                </span> */}
+              </section>
+            </div>
+          ))}
+        </Slider>
         <div className={classes.login}>
           <div className={classes.lgn}>
             <button className={classes.login_btn}><h6 className={classes.lgn_btn}>LOGIN TO YOUR ACCOUNT</h6></button>
@@ -158,12 +227,34 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <div>
+          {/* content corousel */}
+          {/* The carousel that has been used in here is from react-elastic-carousel */}
+        <div style={{marginTop:'10%',marginBottom:'10%'}}>
           <h1>What Clients Say</h1>
           <h6>Testimonials from our standing customers</h6>
-          {/* content corousel */}
+          <Carousel enableAutoPlay showArrows={false}>
+            <div>
+              <img src={userLogo} alt="UserLogo Not found" />
+              <p style={{marginRight:'5%',marginLeft:'5%',lineHeight:'2',color:'#9F9F9F'}}>When I met GCIA for my managing my dad’s retirement fund, I really felt these guys knew what they were talking about. They are very professional and courteous, and come up with a plan after listening patiently to all your goals. A SPOC is assigned for each customer and they are easily approachable over WhatsApp or call. They also send you monthly reports so that you can see the performance of your portfolio in a snapshot. Overall, very satisfied with their service so far.</p>
+              <h5 style={{color:'#D29537',marginTop:'3vh'}}>Archana Irivinti</h5>
+              <h6 style={{color:'#9F9F9F',marginBottom:'8vh'}}>Senior Manager,Technology at ICICI</h6>
+            </div>
+            <div>
+              <img src={userLogo} alt="userLogo Not found" />
+              <p style={{marginRight:'5%',marginLeft:'5%',lineHeight:'2',color:'#9F9F9F'}}>As a novice investor, I had been contemplating whether [investing in] mutual funds was the right choice for me. When I came across Guardian Capital through a friend’s reference, the amount of investment guidance that I received from them, built my faith in investing in Mutual Funds.</p>
+              <h5 style={{color:'#D29537',marginTop:'3vh'}}>Malika Kancherla</h5>
+              <h6 style={{color:'#9F9F9F',marginBottom:'8vh'}}>Founder,Bodhi Valley Learning Academy</h6>
+            </div>
+            <div>
+              <img src={userLogo} alt="UserLogo not found" />
+              <p style={{marginRight:'5%',marginLeft:'5%',lineHeight:'2',color:'#9F9F9F'}}>” The service that <strong>Guardian Capital</strong>  team provides is fabulous. Financial planning is an absolute must for anyone who wants to take control of their finances for their children or for their retirement or anything for that matter. After meeting the financial advisor from Guardian Capital and got some financial education and guidance sessions from him on planning finances for my retirement and for my children’s education. I feel so confident and so much in control of my financial future. Their approach is very professional. I highly recommend Guardian Capital for anyone who is looking for financial planning, Investment and wealth management. I would NEVER, EVER consider hiring any other consultant for providing financial advice.”</p>
+              <h5 style={{color:'#D29537',marginTop:'3vh'}}>Madhavi Adimulam</h5>
+              <h6 style={{color:'#9F9F9F',marginBottom:'8vh'}}>Founder of Ananya Learning Centre,Hyderabad</h6>
+            </div>
+          </Carousel>
         </div>
       </div>
+
       <div>
         <table className={classes.tab1}>
           <tr>

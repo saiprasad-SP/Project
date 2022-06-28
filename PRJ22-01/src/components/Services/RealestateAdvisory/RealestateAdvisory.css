@@ -1,0 +1,19 @@
+/* .container {
+    overflow-y: overlay;
+    background: #f7f7f7;
+    max-width: 100%;
+} */
+.service-title {
+    text-align:center;
+    margin-top: 85px; 
+    margin-bottom:35px;
+    color: #3a3a3a;
+    font-family: "Varela";
+}
+.div1{
+    margin-left:67px;
+    margin-bottom:90px;
+}
+.paragraph-span{
+    color:'#000000'
+}

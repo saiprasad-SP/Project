@@ -1,0 +1,19 @@
+ul {
+    list-style-type: unset!important;
+}
+.service-title{
+    text-align:center;
+    margin-top: 85px;
+    margin-bottom: 35px;
+    color: #3a3a3a;
+    font-family: Varela;
+}
+.p1{
+    text-align:center;
+}
+.p1-span{
+    color:#000000;
+}
+.list-span{
+    color: #000000;
+}

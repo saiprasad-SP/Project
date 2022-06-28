@@ -28,7 +28,7 @@ export default function Footer() {
                 <h5><b>M:</b>9560030404 <b>E:</b>aseem.gupta@gcia.in</h5>
               </div>
               <div class="col">
-              <ExternalLink href='https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fguardian-capital-investment-advisors%2Fabout%2F' rel="noreferrer noopener">
+              <ExternalLink href='https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fguardian-capital-investment-advisors%2Fabout%2F' rel="noreferrer noopener" target='_self'>
                 <BsLinkedin style={{height:'100px'}}/>
               </ExternalLink>
               </div>

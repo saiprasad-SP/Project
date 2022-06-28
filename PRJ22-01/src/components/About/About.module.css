@@ -67,9 +67,12 @@ footer{
 /* .animation:hover{
     background: orange;
 } */
-.col:hover{
+/* .col:hover{
     background: hotpink;
-}
-#col{
+} */
+/* #col{
     background: rgb(95, 49, 49);
+} */
+.imgHover:hover{
+    width: 10px;
 }

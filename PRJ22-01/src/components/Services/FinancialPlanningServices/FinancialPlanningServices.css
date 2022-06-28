@@ -1,0 +1,93 @@
+.education {
+    padding-right: 15px !important;
+    padding-bottom: 15px !important;
+    padding-left: 15px !important;
+    background: rgba(179,210,224,0.5098039215686274) url(../../Img/Services_img/01.jpg) !important;
+    background-position: bottom left !important;
+    background-repeat: no-repeat !important;
+}
+.overview {
+    padding-right: 15px !important;
+    padding-bottom: 15px !important;
+    padding-left: 15px !important;
+    background: rgba(179,210,224,0.5098039215686274) url(../../Img/Services_img/02.jpg) !important;
+    background-position: bottom left !important;
+    background-repeat: no-repeat !important;
+}
+.financialplan {
+    padding-right: 15px !important;
+    padding-bottom: 15px !important;
+    padding-left: 15px !important;
+    background: rgba(179,210,224,0.5098039215686274) url(../../Img/Services_img/03.jpg) !important;
+    background-position: bottom left !important;
+    background-repeat: no-repeat !important;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;
+}
+.portfolio-service {
+    padding-right: 15px !important;
+    padding-bottom: 15px !important;
+    padding-left: 15px !important;
+    background: rgba(179,210,224,0.5098039215686274) url(../../Img/Services_img/04.jpg) !important;
+    background-position: bottom left !important;
+    background-repeat: no-repeat !important;
+}
+.strategy {
+    padding-right: 15px !important;
+    padding-bottom: 15px !important;
+    padding-left: 15px !important;
+    background: rgba(179,210,224,0.5098039215686274) url(../../Img/Services_img/05.jpg) !important;
+    background-position: bottom left !important;
+    background-repeat: no-repeat !important;
+}
+.research {
+    padding-right: 15px !important;
+    padding-bottom: 15px !important;
+    padding-left: 15px !important;
+    background: rgba(179,210,224,0.5098039215686274) url(../../Img/Services_img/06.jpg) !important;
+    background-position: bottom left !important;
+    background-repeat: no-repeat !important;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;
+    margin-bottom: 85px;
+}
+.col-spacing1{
+    column-gap: 30%;
+    margin-left: 4%;
+    margin-top: 5%;
+}
+.col-spacing2{
+    column-gap: 30%;
+    margin-left: 4%;
+    margin-top: 0%;
+}
+.row-spacing{
+    row-gap: 30%;
+}
+.unordered-list{
+    line-height:0.6;
+    font-family: "Varela",sans-serif !important;
+    font-size: 15.4px;
+    padding-left: 20px;
+}
+.list-span{
+    color: #000000;
+}
+.service-title{
+    text-align: center;
+    margin-top: 85px; 
+    margin-bottom:35px;
+    color: #3a3a3a;
+    font-family: "Varela";
+}
+.service-titles{
+    color: #3a3a3a;
+    font-weight: bold;
+    font-family: "Varela",sans-serif !important;
+    font-size: 1.5333em;
+    padding-left:0px;
+}

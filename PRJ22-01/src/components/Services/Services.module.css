@@ -1,0 +1,26 @@
+.container {
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    
+}
+.col-spacing2{
+    column-gap: 20%;
+    margin-left: 5%;
+}
+.service-title{
+    font-family: "Varela",sans-serif !important;
+    margin-left:40%;
+    padding: 50px;
+    color: #3a3a3a;
+}
+.family-office{
+    color: #3a3a3a !important;
+}
+.family-office-service {
+    text-transform: inherit !important;
+    font-size: 16px !important;
+    padding-top: 6px !important;
+    color: #828b8d !important;
+    letter-spacing: 0px !important;
+}

@@ -1,0 +1,35 @@
+/* .container{
+    background-color: #f7f7f7;
+    max-width: 100%;
+    overflow: auto;
+} */
+.p1-span{
+    color: #000000;
+}
+.service_title {
+    text-align: center;
+}
+.accounting_text{
+    margin-top: 4%;
+    margin-left: 14%;
+    color: #717477;
+}
+li::marker  {
+    padding-left:2%;
+}
+.h3-text{
+    color: #3a3a3a;
+    font-family: Varela;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top:4%;
+}
+.ordered-list{
+    padding-left: 2%;
+    line-height: 0.5;
+    padding-top: 1%;
+    margin-bottom: 8%;
+}
+.list-span{
+    color: #000000;
+}
