@@ -1,11 +1,13 @@
 import React from 'react';
+import './About.css';
+import Linkdln from '../Img/icons8-linkedin-50.png';
 import classes from './About.module.css';
 import logo from './../Img/about-bg-2.png';
 import Auht1 from './../Img/kartik1-770x744.jpg';
 import Auht2 from './../Img/Aseem-1-770x744.jpg';
 import Auht3 from './../Img/Kripa1-770x744.jpg';
-import BGI from './../Img/OP4.jpg';
 import Auht4 from './../Img/Amit-1.jpg';
+import BGI from './../Img/OP4.jpg';
 import {ImForward} from 'react-icons/im';
 import {Link} from 'react-router-dom';
 import {ExternalLink} from 'react-external-link';
@@ -14,7 +16,7 @@ export default function About() {
     <div className={classes.parent_container}>
       <div>
         <div style={{position:'relative',textAlign:'center',color:'Black'}}>
-          <img src={BGI} alt="Not found" style={{opacity:'0.7',width:'100%',height:'500px'}}/>
+          <img src={BGI} alt="Not found" style={{opacity:'0.7',height:'500px'}}/>
           <div><h1 style={{position: 'absolute',top: '50%',left: '50%',transform: 'translate(-50%, -50%)'}}>About Us</h1></div>
         </div>
       </div>
@@ -57,48 +59,66 @@ export default function About() {
       </div>
     </div>
     {/* animation section  */}
-    <div className={classes.child_container}>
-     <div className={classes.line_spark}></div>
-      <div>
-        <h1 style={{marginLeft:'40%',padding:'50px'}}>Leadership Info</h1>
-        <div className="container">
-            <div className="row">
-              <div className="col"  style={{textAlign:'center'}}>
-                <ExternalLink href='https://www.linkedin.com/in/kartikinformation/' target='_self'>
-                  <img src={Auht1} alt="user not found" style={{width:'85%'}}/>
-                </ExternalLink>
-                <Link to='/KD'>
-                  <h5>kartik Damodar</h5>
-                </Link>
-              </div>
-              <div className="col" style={{textAlign:'center'}} target='_self'>
-                <ExternalLink href='https://www.linkedin.com/in/aseem-sen-gupta-3a3ab318/'>
-                  <img src={Auht2} alt="user not found" style={{width:'85%'}} />
-                </ExternalLink>
-                <Link to='/ASG'>
-                  <h5>Aseem Sen Gupta</h5>
-                </Link>
-              </div>
-              <div className="col" style={{textAlign:'center'}} target='_self'>
-                <ExternalLink href='https://www.linkedin.com/in/kripa-b-19132b119/'>
-                  <img src={Auht3} alt="user not found" style={{width:'85%'}} />
-                </ExternalLink>
-                <Link to='/KB'>
-                  <h5>Kripa Bhattarai</h5>
-                </Link>
-              </div>
-              <div className="col" style={{textAlign:'center'}}>
-                <ExternalLink href='https://www.linkedin.com/in/amit-sharma-09824ab/' target='_self'>
-                  <img src={Auht4} alt="user not found" style={{width:'85%'}} />
-                </ExternalLink>
-                <Link to='/AS'>
-                  <h5>Amit Sharma</h5>
-                </Link>
-              </div>
-            </div>
+    <section style={{background:'white',padding:'2%'}}>
+    <div className={classes.line_spark}></div>
+      <div style={{marginLeft:'40%',padding:'50px'}}>
+        <h1>Leadership info</h1>
+      </div>
+      <div className='Lflex_container'>
+        <div className='imageBox'>
+          <div className='imageInn img_hover_zoom'>
+            <img src={Auht1} alt="user not found" />
+          </div>
+          <Link to='/KD'>
+            <h5 className={classes.h5}>kartik Damodar</h5>
+          </Link>
+          <div className='hoverImg'>
+          <ExternalLink href='https://www.linkedin.com/in/kartikinformation/' target='_self'>
+            <img src={Linkdln} alt="" />
+          </ExternalLink>
+          </div>
+        </div>
+        <div className='imageBox'>
+          <div className='imageInn img_hover_zoom'>
+            <img src={Auht2} alt="user not found" />
+          </div>
+          <Link to='/ASG'>
+            <h5 className={classes.h5}>Aseem Sen Gupta</h5>
+            </Link>
+          <div className='hoverImg'>
+          <ExternalLink href='https://www.linkedin.com/in/aseem-sen-gupta-3a3ab318/' target='_self'>
+            <img src={Linkdln} alt="" />
+          </ExternalLink>
+          </div>
+        </div>
+        <div className='imageBox'>
+          <div className='imageInn img_hover_zoom'>
+            <img src={Auht3} alt="user not found" />
+          </div>
+          <Link to='/KB'>
+            <h5 className={classes.h5}>Kripa Bhattarai</h5>
+          </Link>
+          <div className='hoverImg'>
+            <ExternalLink href='https://www.linkedin.com/in/kripa-b-19132b119/' target='_self'>
+            <img src={Linkdln} alt="" />
+          </ExternalLink>
+          </div>
+        </div>
+        <div className='imageBox'>
+          <div className='imageInn img_hover_zoom'>
+            <img src={Auht4} alt="user not found" />
+          </div>
+          <Link to='/AS'>
+            <h5 className={classes.h5}>Amit Sharma</h5>
+          </Link>
+          <div className='hoverImg'>
+            <ExternalLink href='https://www.linkedin.com/in/amit-sharma-09824ab/' target='_self'>
+            <img src={Linkdln} alt="" />
+            </ExternalLink>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
     {/*Core values of the company */}
     <div>

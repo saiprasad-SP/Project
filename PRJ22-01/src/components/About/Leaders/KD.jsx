@@ -4,12 +4,14 @@ import {BsFillEyeFill} from 'react-icons/bs';
 import {AiOutlineHeart} from 'react-icons/ai';
 import Auht1 from '../../Img/kartik1-770x744.jpg';
 import { ExternalLink } from 'react-external-link';
-import {GrLinkedin} from 'react-icons/gr';
+// import {GrLinkedin} from 'react-icons/gr';
+import Lin from '../../Img/icons8-linkedin-50.png'
+
 import './leaders.css';
 
 export default function KD() {
   return (
-      <div>
+      <div style={{marginBottom:'75px'}}>
         <div className='disp_cont'>
             <div className='headers'>
                 <span  className='span'>PROFESSIONAL TEAM</span>
@@ -22,11 +24,10 @@ export default function KD() {
             </div>
         </div>
         <div className='flex_container'>
-            <div>
+            <div className='leader_section'>
                 <img src={Auht1} alt="user not found" className='Auth1'/>
-                <ExternalLink>
-                 <GrLinkedin />
-                 <i></i>
+                <ExternalLink href='https://www.linkedin.com/in/kartikinformation/' target='_self'>
+                 <img src={Lin} alt="linkdln link not found" className='linkdln' />
                 </ExternalLink>
             </div>
             <div className='about_auth'>

@@ -1,0 +1,38 @@
+.section3{
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.section_gridContainer1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.section_gridContainer2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.section_gridContainer1 span{
+padding: 5%;
+margin: 5%;
+}
+span img{
+    margin: 5%;
+}
+/* span img:hover{
+    margin: 5%;
+    height: 100px;
+    overflow: hidden;
+} */
+span h5 p:hover{
+    font-size: 0.5rem;
+}
+.section_gridContainer2 span{
+    padding: 5%;
+    margin: 5%;
+}
+.section_gridContainer1 span:hover{
+    background-color: dodgerblue;
+    & h5{
+        height: 100px;
+    }
+}
