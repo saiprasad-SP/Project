@@ -7,12 +7,14 @@
     padding: 15px;
     color: #9F9F9F;
 }
+/*
 .span:hover{
     color: #D29537;
 }
 GiWatch:hover{
     display: hidden;
 }
+*/
 .Auth1{
     height: 320px;
     margin-right: 5%;
@@ -41,6 +43,8 @@ GiWatch:hover{
 .flex_container div{
     flex-direction: column;
 }
+/*
 .leader_section{
     text-align: center;
 }
+*/
