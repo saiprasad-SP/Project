@@ -1,0 +1,56 @@
+.grid_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    padding: 5px;
+}.pop {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 42%;
+    background: #f1efef;
+    color: #fff;
+    /* text-align: center; */
+    /* box-shadow: 5px 5px 2px #bbb; */
+    z-index: 100;
+    opacity: 0;
+    padding: 1%;
+  }
+  
+  .pop.active {
+    opacity: 1;
+  }
+  .App.activep p {
+    filter: blur(1px);
+    pointer-events: none;
+    user-select: none;
+  }
+  .button {
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    background: #eaf544;
+    cursor: pointer;
+    /* outline: none; */
+    /* float: right; */
+    right: 0%;
+    top: 0%;
+  }
+.pop h1{
+  font-size: 2.75rem;
+  color: black;
+}
+.pop input{
+  padding: 15px;
+  margin: 5px;
+  border: none;
+}
+.pop .message{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.pop button{
+  margin-top: 4%;
+}

@@ -1,0 +1,12 @@
+.fgrid_container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+.sgrid_container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.Link{
+    color: white;
+    padding: 0%;
+}

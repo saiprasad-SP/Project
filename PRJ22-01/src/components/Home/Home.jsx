@@ -1,17 +1,18 @@
 import React from 'react';
 import Carousel from 'react-elastic-carousel';
+import './Home.css'
 // import Popup from 'reactjs-popup';
 // import {Zoom} from 'react-slideshow-image';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
-
+import {Link} from 'react-router-dom';
 // import 'react-slideshow-image/dist/styles.css'
 import Picture from '../Img/picture.jpg'
-import logo1 from './../Img/guardian-capital-investment-advisors-hyderabad.jpg';
-import logo2 from './../Img/guardian-capital-investment-advisors-india.jpg';
-import logo3 from './../Img/gcia-wealth-management-services.jpg';
-import logo4 from './../Img/secure-your-financial-future.jpg';
-import logo5 from './../Img/guardian-capital-investments-advisors.png'
+// import logo1 from './../Img/guardian-capital-investment-advisors-hyderabad.jpg';
+// import logo2 from './../Img/guardian-capital-investment-advisors-india.jpg';
+// import logo3 from './../Img/gcia-wealth-management-services.jpg';
+// import logo4 from './../Img/secure-your-financial-future.jpg';
+// import logo5 from './../Img/guardian-capital-investments-advisors.png'
 import H1 from '../Img/H1.jpg'
 import H2 from '../Img/H2.jpg'
 import H3 from '../Img/H3.jpg'
@@ -140,73 +141,65 @@ export default function Home() {
               </div>
               <div>
                 <li>We adhere to the Warren Buffet, Value Investing model for investments -- we treat your money as if it was our own.</li>
-                <div className="btn btn-outline-danger shadow" > WATCH VIDEO <i class="bi bi-send"></i></div>
+                <div className="btn btn-outline-danger shadow" > WATCH VIDEO <i className="bi bi-send"></i></div>
               </div>
             </div>
           </div>
         </div>
         <div className={classes.float_container}>
-          <div className="col-md-15 text-center" classNaem={classes.floar_child}>
+          <div className="col-md-15 text-center">
              <h5 className={classes.float_child} style={{color:'white'}}>Call Guardian today and secure your financial future</h5>
           </div>
-          <div className="btn btn-outline-danger shadow">GET IN TOUCH <i class="bi bi-send"></i></div>
+          <div className="btn btn-outline-danger shadow">GET IN TOUCH <i className="bi bi-send"></i></div>
         </div>        
         <div className="child_container">
         {/* <div className="line_spark"></div> */}
-        <div>
+        <section className='section3'>
           <h1 style={{marginLeft:'0%',padding:'50px'}}>We have you covered</h1>
-          <p classNaem="text-center">Sit back, relax, and enjoy your life.</p>
-          <div className="container">
-              <div className="row">
-                <div className="col" style={{textAlign:'center',padding:'15px'}}>
-                  <img src={H1} alt="" style={{width:'20%'}} />
+          <p className="text-center">Sit back, relax, and enjoy your life.</p>
+          <section>
+            <div className='section_gridContainer1'>
+              <span><Link to="/family-office-services">
+                  <img src={H1} alt="" />
                   <h5>Family Offices Services</h5>
                   <p>One stop solution for all your financial requirements.</p>
-                </div>
-                <div className="col" style={{textAlign:'center',padding:'15px'}}>
+                  </Link></span>
+              <span><Link to="/financial-planning-services">
                   <img src={H2} alt="" style={{width:'15%'}} />
                   <h5>Financial Planning Services</h5>
                   <p>Highly customized financial plans.</p>
-                </div>
-                <div className="col" style={{textAlign:'center',padding:'15px'}}>
+                  </Link></span>
+              <span><Link to="/wealth-management">
                   <img src={H3} alt="" style={{width:'20%'}} />
                   <h5>Wealth Management Advisory</h5>
                   <p>We make your money work for you</p>
-                </div>
-                {/* <p></p>    */}
-              </div>
-          </div>
-        </div>
-      </div>
-      <div className="child_container">
-        {/* <div className="line_spark"></div> */}
-        <div>
-          <div className="container">
-              <div className="row" style={{margin:'50px'}}>
-                <div className="col" style={{textAlign:'center',padding:'25px'}}>
+                  </Link></span>
+            </div>
+            <div className='section_gridContainer2'>
+              <span><Link to="/legal-advisory">
                   <img src={H4} alt="" style={{width:'20%'}} />
                   <h5>Accounting And Taxation Advisory</h5>
                   <p>In-house accounting team that consults on accounts and taxes.</p>
-                </div>
-                <div className="col" style={{textAlign:'center',padding:'25px'}}>
+                  </Link></span>
+              <span><Link to="/real-estate-advisory">
                   <img src={H5} alt="" style={{width:'22%'}} />
                   <h5>Estate And Succession Advisory</h5>
                   <p>We advise on creating wills and trusts, and maintaining trusts.</p>
-                 </div>
-                <div className="col" style={{textAlign:'center',padding:'25px'}}>
+                  </Link></span>
+              <span> <Link to="/insurance-advisory">
                   <img src={H6} alt="" style={{width:'23%'}} />
                   <h5>Insurance Advisory</h5>
                   <p>We help you choose right kind and right amount of insurance</p>
-                </div>
-                <div className="col" style={{textAlign:'center',padding:'25px'}}>
+                  </Link></span>
+              <span><Link to="/accounting-and-taxation-advisory">
                   <img src={H7} alt="" style={{width:'25%'}} />
                   <h5>Real Estate Advisory</h5>
                   <p>We partner with firms who take care of your real estate needs.</p>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
+                  </Link></span>
+            </div>
+          </section>
+        </section>
+       </div>
       {/* description about the company which is located in different cities */}
       <div style={{backgroundImage: `url(${bg})`}} className={classes.cnt_container}>
         <div className={classes.cnt_child} style={{marginLeft:'380px'}}>
@@ -257,20 +250,24 @@ export default function Home() {
 
       <div>
         <table className={classes.tab1}>
-          <tr>
-            <th>At the Begining of the month</th>
-            <th>Received during the month</th>
-            <th>Resolved during the month</th>
-            <th>Pending at the end of the month</th>
-            <th>Reason for pendency</th>
-          </tr>
-          <tr>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>-</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>At the Begining of the month</th>
+              <th>Received during the month</th>
+              <th>Resolved during the month</th>
+              <th>Pending at the end of the month</th>
+              <th>Reason for pendency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+          </tbody>
         </table>
       </div>
       <div>
@@ -278,25 +275,32 @@ export default function Home() {
       </div>
       <div><h6 style={{color:'rgb(135,116,139)',float:'left',marginTop:'35px',marginLeft:'5px'}}>Complaints Data Detail</h6></div>
       <div><h6 style={{marginTop:'75px',marginRight:'80px',color:'rgb(135,116,139)'}}>Disclosure with respect to compliance with Annual compliance audit requirement under Regulation 19(3) of SECURITIES AND EXCHANGE BOARD OF INDIA (INVESTMENT ADVISERS) REGULATIONS, 2013 for last and current financial year are as under :</h6></div>
-      <div><table>
-        <tr>
-          <th>Sr.No.</th>
-          <th>Financial Year</th>
-          <th>Compliance Audit Status</th>
-          <th>Remarks, if any</th>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>FY 2020-21</td>
-            <td>Conducted/Not Conducted</td>
-            <td>Complied</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>FY 2021-222</td>
-            <td>Conducted/Not Conducted</td>
-            <td>In Process,as due date is <br /> 30 September 2022</td>
-          </tr></table></div>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Sr.No.</th>
+              <th>Financial Year</th>
+              <th>Compliance Audit Status</th>
+              <th>Remarks, if any</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>FY 2020-21</td>
+              <td>Conducted/Not Conducted</td>
+              <td>Complied</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>FY 2021-222</td>
+              <td>Conducted/Not Conducted</td>
+              <td>In Process,as due date is <br /> 30 September 2022</td>
+            </tr>
+          </tbody>
+        </table>
+       </div>
       <div className={classes.container}>
         <img src={H9} alt="not found" style={{height:'25%',width:'100%'}}/>
         <div className={classes.img_left} style={{width:'50%'}}>

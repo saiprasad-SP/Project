@@ -1,4 +1,5 @@
-import React from 'react';
+import {useState} from 'react';
+import {RiCloseCircleFill} from 'react-icons/ri';
 import { GrSend } from 'react-icons/gr';
 import logo from './../Img/main_logo-1.png';
 import {BrowserRouter as Router,Routes,Route,NavLink} from 'react-router-dom';
@@ -16,6 +17,8 @@ import Blog from '../Blog/Blog';
 import Contacts from '../Contact/Contact';
 import Careers from '../Careers/Careers';
 import Education from '../Education/Education';
+import Ts from '../Footer/TermsConditions';
+import PrivacyPolicy from '../Footer/PrivacyPolicy/PrivacyPolicy';
 import Post1 from '../Blog/Post1.jsx'
 import Post2 from '../Blog/Post2.jsx'
 import Post3 from '../Blog/Post3.jsx'
@@ -23,43 +26,62 @@ import KD from '../About/Leaders/KD';
 import AS from '../About/Leaders/AS';
 import ASG from '../About/Leaders/ASG';
 import KB from '../About/Leaders/KB';
+import {BsSearch,BsTwitter,BsLinkedin}  from 'react-icons/bs'
+import {FaFacebookF}  from 'react-icons/fa'
+import './NavBar.css'
 
 import './NavBar.module.css'
-
+import { ExternalLink } from 'react-external-link';
 export default function NavBar() {
+    const [show, setShow] = useState(false);
   return (
     <Router>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container-fluid" >
                 <NavLink className="navbar-brand" to="/"> <img src={logo} alt="Not Found" style={{marginLeft:'10%'}} /></NavLink>
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul className="navbar-nav">
+                  <ul className="navbar-nav">
                     <li className="nav-item" style={{paddingLeft:'50px'}}>
-                        <NavLink className="nav-link active" aria-current="page" to="/" exact activeStyle={{color:'#D29537'}}>HOME</NavLink>
+                        <NavLink className="nav-link active" aria-current="page" to="/" activestyle={{color:'#D29537'}}>HOME</NavLink>
                     </li>
                     <li className="nav-item" style={{paddingLeft:'50px'}}>
-                        <NavLink className="nav-link" to="/about" exact activeStyle={{color:'#D29537'}}>ABOUT US</NavLink>
+                        <NavLink className="nav-link" to="/about"  activestyle={{color:'#D29537'}}>ABOUT US</NavLink>
                     </li>
                     <li className="nav-item" style={{paddingLeft:'50px'}}>
-                        <NavLink className="nav-link" to="/services" exact activeStyle={{color:'#D29537'}}>SERVICES</NavLink>
+                        <NavLink className="nav-link" to="/services"  activestyle={{color:'#D29537'}}>SERVICES</NavLink>
                     </li>
                     <li className="nav-item" style={{paddingLeft:'50px'}}>
-                        <NavLink className="nav-link" to="/blog" exact activeStyle={{color:'#D29537'}}>BLOG</NavLink>
+                        <NavLink className="nav-link" to="/blog"  activestyle={{color:'#D29537'}}>BLOG</NavLink>
                     </li>
                     <li className="nav-item" style={{paddingLeft:'50px'}}>
-                        <NavLink className="nav-link" to="/contacts" exact activeStyle={{color:'#D29537'}}>CONTACT US</NavLink>
+                        <NavLink className="nav-link" to="/contacts"  activestyle={{color:'#D29537'}}>CONTACT US</NavLink>
                     </li>
                     <li className="nav-item" style={{paddingLeft:'50px'}}>
-                        <NavLink className="nav-link" to="/careers" exact activeStyle={{color:'#D29537'}}>CAREERS</NavLink>
+                        <NavLink className="nav-link" to="/careers"  activestyle={{color:'#D29537'}}>CAREERS</NavLink>
                     </li>
                     <li className="nav-item" style={{paddingLeft:'50px'}}>
-                        <NavLink className="nav-link" to="/education" exact activeStyle={{color:'#D29537'}}>EDUCATION</NavLink>
+                        <NavLink className="nav-link" to="/education"  activestyle={{color:'#D29537'}}>EDUCATION</NavLink>
                     </li>
                     {/* three dots has been removed and it has to be added when the page is responsive */}
                     <li className="nav-item" style={{marginLeft:'400px'}}>
-                        <NavLink className="nav-link" to="/add" exact activeStyle={{color:'#D29537'}}><button>GET IN TOUCH <GrSend style={{color:'white'}}/></button></NavLink>
+                        <div className='grid_container'>
+                            <span><BsSearch/></span>
+                            <span><FaFacebookF/></span>
+                            <span><BsTwitter/></span>
+                            <span><ExternalLink href='#' target='_self'><BsLinkedin/></ExternalLink></span>
+                        </div>
+                         <button onClick={() => setShow(true)}>GET IN TOUCH <GrSend style={{color:'white'}}/></button>
                     </li>
-                    </ul>
+                    <div className={`${show ? "pop active" : "pop"}`}>
+                        <button onClick={() => setShow(false)} className='button'><RiCloseCircleFill/></button>
+                        <h1>Schedule a call</h1>
+                        <input type="text" name="" id="text" placeholder='Name' />
+                        <input type="email" name="" id="" placeholder='Email'/>
+                        <input type="num" name="" id="" placeholder='Phone'/>
+                        <input type="text" name="" id="" className='message' placeholder='Message'/>
+                        <button>SEND REQUEST</button>
+                    </div>
+                  </ul>
                 </div>
             </div>
         </nav>
@@ -85,7 +107,8 @@ export default function NavBar() {
             <Route path='/ASG' element={<ASG/>}/>
             <Route path='/KB' element={<KB/>}/>
             <Route path='/AS' element={<AS/>}/>
-
+            <Route path='/Ts' element={<Ts/>}/>
+            <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>}/>
         </Routes>
   </Router>
   );
